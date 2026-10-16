@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tg"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Coin Trade</title>
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div id="login" class="card">
+ <h1 id="t-title"></h1><p id="t-sub"></p>
+ <label id="l-first"></label><input id="first" autocomplete="given-name">
+ <label id="l-last"></label><input id="last" autocomplete="family-name">
+ <label id="l-lang"></label>
+ <select id="lang"><option value="tg">Тоҷикӣ</option><option value="ru">Русский</option><option value="en">English</option></select>
+ <div class="err" id="err"></div><button id="enter"></button>
+</div>
+<div id="cab" class="hidden">
+ <div class="top"><h1 id="hello"></h1><div class="r">
+  <select id="lang2"><option value="tg">Тоҷикӣ</option><option value="ru">Русский</option><option value="en">English</option></select>
+  <button class="g" id="out"></button></div></div>
+ <div class="stats">
+  <div class="stat"><span id="s1"></span><b id="bal" class="gold">100</b></div>
+  <div class="stat"><span id="s2"></span><b id="eq">100</b></div>
+  <div class="stat"><span id="s3"></span><b id="pnl">0</b></div></div>
+ <div class="main">
+  <div class="card"><div class="tabs"><button id="tAll"></button><button id="tFav" class="g"></button></div><div id="list"></div></div>
+  <div class="card" id="detail">
+   <div class="ph"><div><b id="pair"></b> <small id="live"></small></div><b id="price"></b></div>
+   <div class="ext" id="ext"></div>
+   <div class="tip" id="tip">&nbsp;</div>
+   <canvas id="ch"></canvas>
+   <div class="trade"><input id="amt" type="number" min="0" step="any" value="10"><button class="buy" id="buy"></button><button class="sell" id="sell"></button></div>
+   <div class="hold" id="hold"></div><div class="msg" id="msg"></div>
+   <div class="hold" id="demo"></div>
+  </div></div>
+</div>
+<script src="app.js"></script>
+</body></html>
